@@ -129,7 +129,7 @@ const Login = () => {
       navigate(`/${selected.toLowerCase()}`);
     } catch (error) {
       toast.dismiss();
-      console.error(error);
+    //  console.error(error);
       toast.error(error.response?.data?.message || "Login failed");
     }
   };
